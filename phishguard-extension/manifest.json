@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "PhishGuard AI",
+  "version": "1.0",
+  "description": "Detect phishing websites using ML",
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.jpg",
+      "48": "icon.jpg",
+      "128": "icon.jpg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

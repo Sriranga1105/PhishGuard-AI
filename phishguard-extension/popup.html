@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PhishGuard AI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 15px;
+      width: 260px;
+      margin: 0;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+    }
+
+    .status {
+      margin-top: 15px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .status span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>PhishGuard AI</h2>
+    <div class="status">
+      <p>URL: <span id="url">Loading...</span></p>
+      <p>Status: <span id="status">⏳ Analyzing...</span></p>
+      <p>Risk Level: <span id="risk">N/A</span></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

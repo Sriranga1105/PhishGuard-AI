@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Phishing",
+    "version": "1.0",
+    "description": "Automatically scans websites for threats using URLVoid.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "host_permissions": [
+      "https://www.urlvoid.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

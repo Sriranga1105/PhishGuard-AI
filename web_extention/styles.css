@@ -1,0 +1,44 @@
+body {
+    width: 250px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    width: 90%;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+}
+
+#riskLevel {
+    font-weight: bold;
+}
+
+#infoLink a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#infoLink a:hover {
+    text-decoration: underline;
+}
